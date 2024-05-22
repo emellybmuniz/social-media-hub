@@ -43,24 +43,35 @@ iframe {
     border-radius: 2px;
 }
 
-#redes-container {
+#redes-sociais {
     display: grid;
-    align-items: flex-end;
     justify-content: right;
     right: 0px;
-    margin: 3px;
-    color: white; 
+    margin: 5px;
 }
 
-#redes-container > a >img {
+#redes-sociais img { 
     max-height: 70px;
     border-radius: 50%;
-    padding: 6px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.592);
 }
 
+#redes-sociais img:hover {
+    transform: translate(3px, 4px); 
+}
+
+#redes-sociais img:active {
+    transform: scale(95%);
+}
+
+div a {
+    padding: 5px;
+}
+
+
 @media (max-width: 600px) {
-    #redes-container > a >img {
-        max-width: 10vw;      
+    #redes-sociais img {
+        max-width: 13vw;      
     }
 
     #phone {
