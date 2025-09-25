@@ -3,25 +3,23 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box; 
 }
 
 html, body {
-    max-height: 100vh;
+    min-height: 100vh; 
 }
 
 body {
     background-image: url(../imagens/fundo-madeira.jpg);
     background-repeat: no-repeat;
-    background-position: bottom center;
+    background-position: center center;
     background-size: cover;
     background-attachment: fixed;
 }
 
 #phone {
     position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;  
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -33,7 +31,7 @@ body {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%); 
+    transform: translate(-50%, -50%);
 }
 
 iframe {
@@ -44,45 +42,47 @@ iframe {
 }
 
 #redes-sociais {
-    display: grid;
-    justify-content: right;
-    right: 0px;
-    margin: 5px;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px; 
 }
 
-#redes-sociais img { 
-    max-height: 70px;
+#redes-sociais a img { 
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
-    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.592);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
 }
 
-#redes-sociais img:hover {
-    transform: translate(3px, 4px); 
+#redes-sociais a img:hover {
+    transform: translate(-3px, -3px) scale(1.1); 
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
 }
 
-#redes-sociais img:active {
-    transform: scale(95%);
-}
 
-div a {
-    padding: 5px;
+#redes-sociais a img:active {
+    transform: translate(0, 0) scale(1);
+    transition-duration: 0.1s;
 }
 
 
 @media (max-width: 600px) {
-    #redes-sociais img {
-        max-width: 13vw;      
+    #redes-sociais a img {
+        width: 13vw;
+        height: 13vw;
     }
 
     #phone {
-        margin: 0% -5vw;
-
+        left: 45%;
     }
-
+    
     #phone-content {
-        margin: 0px -5vw;
-    }    
+        left: 45%;
+    }
+    
+
 }
-
-
-
