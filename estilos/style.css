@@ -8,14 +8,14 @@
 
 :root {
   --bg-color: #fafafa;
-  --bg-image: url(../imagens/fundo-madeira.jpg);
+  --bg-image: url(../imagens/fundo-madeira.webp);
   --shadow-color: rgba(0, 0, 0, 0.4);
   --shadow-hover-color: rgba(0, 0, 0, 0.5);
 }
 
 body.tema-escuro {
   --bg-color: #0d0d0d; 
-  --bg-image: none; 
+  --bg-image: url(../imagens/fundo-madeira-escura.png); 
   --shadow-color: rgba(0, 0, 0, 0.5);
   --shadow-hover-color: rgba(0, 0, 0, 0.7);
 }
