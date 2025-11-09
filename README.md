@@ -7,7 +7,7 @@
 ![GitHub repo size](https://img.shields.io/github/repo-size/emellybmuniz/social-media-hub)
 ![Project Status](https://img.shields.io/badge/Status%20-%20Completed%20-%20%234BC21E)
 
-A simple and interactive social media hub with a mobile-first design. It features an iPhone mobile interface that displays multiple social platforms responsively. This project was developed based on the Git/GitHub course from "Curso em Vídeo".
+A simple and interactive social media hub with a mobile-first design. It features an iPhone mobile interface that displays multiple social platforms responsively. This project was developed based on the HTML5  and CSS3 course from "Curso em Vídeo".
 
 ---
 
