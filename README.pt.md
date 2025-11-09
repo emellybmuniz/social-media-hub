@@ -7,7 +7,7 @@
 ![GitHub repo size](https://img.shields.io/github/repo-size/emellybmuniz/social-media-hub)
 ![Project Status](https://img.shields.io/badge/Status%20-%20Completed%20-%20%234BC21E)
 
-Um hub de redes sociais simples e interativo com design mobile-first. Apresenta uma interface de celular iPhone que exibe múltiplas plataformas sociais de forma responsiva. Este projeto foi desenvolvido com base no curso de Git/GitHub do "Curso em Vídeo".
+Um hub de redes sociais simples e interativo com design mobile-first. Apresenta uma interface de celular iPhone que exibe múltiplas plataformas sociais de forma responsiva. Este projeto foi desenvolvido com base no curso de HTML5 e CSS3 do "Curso em Vídeo". O objetivo principal foi testar iframes na prática.
 
 ---
 

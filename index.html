@@ -1,44 +1,58 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>redes sociais</title>
-    <link rel="stylesheet" href="estilo/style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="estilos/style.css" />
+  </head>
+  <body>
     <div id="redes-sociais">
-        
-        <a href="home.html" id="home" target='frame'><img src="imagens/logo-home.jpg" alt="home">
-        </a>
-        
-        <a href="instagram.html" target='frame'><img src="imagens/logo-instagram.jpg" alt="instagram">
-        </a>
+      <a href="home.html" id="home" target="frame"
+        ><img src="imagens/logo-home.jpg" alt="home" />
+      </a>
 
-        <a href="twitter.html" target='frame'><img src="imagens/logo-twitter.jpg" alt="twitter">
-        </a>
+      <a href="home.html" id="btn-tema" target="frame"
+        ><img src="imagens/switch-dark-mode.png" alt="home" />
+      </a>
 
-        <a href="youtube.html"target='frame'><img src="imagens/logo-youtube.jpg" alt="youtube">
-        </a>
+      <a href="instagram.html" target="frame"
+        ><img src="imagens/logo-instagram.jpg" alt="instagram" />
+      </a>
 
-        <a href="facebook.html"target='frame'><img src="imagens/logo-facebook.jpg" alt="facebook"></a>
+      <a href="twitter.html" target="frame"
+        ><img src="imagens/logo-twitter.jpg" alt="twitter" />
+      </a>
 
-        <a href="github.html" target='frame'>
-            <img src="imagens/logo-github.jpg" alt="github"></a>
+      <a href="youtube.html" target="frame"
+        ><img src="imagens/logo-youtube.jpg" alt="youtube" />
+      </a>
 
+      <a href="facebook.html" target="frame"
+        ><img src="imagens/logo-facebook.jpg" alt="facebook"
+      /></a>
+
+      <a href="github.html" target="frame">
+        <img src="imagens/logo-github.jpg" alt="github"
+      /></a>
     </div>
 
     <div id="phone">
-        <picture>
-            <img src="imagens/frame-iphone.png" alt="celular">
-            <source media="(max-width: 600px)" srcset="imagens/frame-iphone454x225">
-        </picture>
+      <picture>
+        <img src="imagens/frame-iphone.png" alt="celular" />
+        <source
+          media="(max-width: 600px)"
+          srcset="imagens/frame-iphone454x225"
+        />
+      </picture>
+    </div>
 
-    </div>
-    
     <div id="phone-content">
-        <iframe src="home.html" frameborder="0" name="frame">[lamento, mas seu navegador não compatível]</iframe>
+      <iframe src="home.html" frameborder="0" name="frame"
+        >[lamento, mas seu navegador não compatível]</iframe
+      >
     </div>
-    
-</body>
+
+    <script src="scripts/alterna-tema.js"></script>
+  </body>
 </html>

@@ -1,0 +1,100 @@
+@charset "UTF-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg-color: #fafafa;
+  --bg-image: url(../imagens/fundo-madeira.jpg);
+  --shadow-color: rgba(0, 0, 0, 0.4);
+  --shadow-hover-color: rgba(0, 0, 0, 0.5);
+}
+
+body.tema-escuro {
+  --bg-color: #0d0d0d; 
+  --bg-image: none; 
+  --shadow-color: rgba(0, 0, 0, 0.5);
+  --shadow-hover-color: rgba(0, 0, 0, 0.7);
+}
+
+html,
+body {
+  min-height: 100vh;
+}
+
+body {
+  background-color: var(--bg-color);
+  background-image: var(--bg-image);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#phone {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 311px;
+  height: 627px;
+}
+
+#phone-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+iframe {
+  border: none;
+  height: 475px;
+  width: 269px;
+  border-radius: 2px;
+}
+
+#redes-sociais {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+#redes-sociais a img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  box-shadow: 2px 2px 5px var(--shadow-color);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#redes-sociais a img:hover {
+  transform: translate(-3px, -3px) scale(1.1);
+  box-shadow: 5px 5px 15px var(--shadow-hover-color);
+}
+
+#redes-sociais a img:active {
+  transform: translate(0, 0) scale(1);
+  transition-duration: 0.1s;
+}
+
+@media (max-width: 600px) {
+  #redes-sociais a img {
+    width: 13vw;
+    height: 13vw;
+  }
+
+  #phone {
+    left: 45%;
+  }
+
+  #phone-content {
+    left: 45%;
+  }
+}
